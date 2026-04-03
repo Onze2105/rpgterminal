@@ -9,8 +9,8 @@ public class Guerreiro extends Personagem {
     @Override
     public void atacar(Personagem alvo) {
         int dano = gerarDano();
-        System.out.println(nome + fraseAleatoria() + alvo.getNome());
-        System.out.println("Causou " + dano + " de dano.");
+        System.out.println(Main.GREEN + nome + fraseAleatoria() + alvo.getNome() + Main.RESET);
+        System.out.println(Main.RED + "Causou " + dano + " de dano." + Main.RESET);
         alvo.receberDano(dano);
     }
 
